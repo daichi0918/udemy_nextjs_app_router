@@ -1,9 +1,9 @@
 // POINT [SG]フェッチしたデータで静的なページを作成
-import { ENDPOINT } from "@/constants";
-import ArticleList from "../../components/articleList";
+import { ENDPOINT } from '@/constants';
+import ArticleList from '../../components/articleList';
 
 export default async function Page() {
-  const articles = await fetch(ENDPOINT, { cache: "no-store" }).then((res) =>
+  const articles = await fetch(ENDPOINT, { cache: 'no-store' }).then((res) =>
     res.json()
   );
 
